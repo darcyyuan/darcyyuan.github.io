@@ -18,7 +18,7 @@ h1{
 
 img {
     position: absolute;
-    top: 0; bottom:1; left: 0; right:0;
+    top: 0; bottom:-1; left: 0; right:0;
     margin: auto;
 }
 
