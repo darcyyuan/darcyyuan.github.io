@@ -1,50 +1,198 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Love</title>
-	</head>
-	<body>
+<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=4">
+			<title>This is my web</title>
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/style.css">
+			<link rel="stylesheet" href="icon/css/font-awesome.min.css">
+		</head>
+		<body id="body-top">
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <a class="navbar-brand page-scroll" href="#body-top">Home</a>
+			    </div>
+			    <ul class="nav navbar-nav navbar-right">
+			      <li>
+			      	<a class="page-scroll" href="#about">About Me</a>
+			      </li>
+			      <li>
+			      	<a class="page-scroll" href="#experience">Experience</a>
+			      </li>
+			      <li>
+			      	<a class="page-scroll" href="#contact">Contact</a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+			<header id="myCarousel" class="carousel slide">
+		        <!-- Indicators -->
+		        <ol class="carousel-indicators">
+		            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		            <li data-target="#myCarousel" data-slide-to="1"></li>
+		            <li data-target="#myCarousel" data-slide-to="2"></li>
+		        </ol>
 
-		<h1>袁雪凌是个天才！</h1>
+		        <!-- Wrapper for Slides -->
+		        <div class="carousel-inner">
+		            <div class="item active">
+		                <!-- Set the first background image using inline CSS below. -->
+		                <div class="fill" style="background-image:url('images/1.JPG');"></div>
+		                <div class="carousel-caption">
+		                    <h2>Caption 1</h2>
+		                </div>
+		            </div>
+		            <div class="item">
+		                <!-- Set the second background image using inline CSS below. -->
+		                <div class="fill" style="background-image:url('images/2.JPG');"></div>
+		                <div class="carousel-caption">
+		                    <h2>Caption 2</h2>
+		                </div>
+		            </div>
+		            <div class="item">
+		                <!-- Set the third background image using inline CSS below. -->
+		                <div class="fill" style="background-image:url('images/3.JPG');"></div>
+		                <div class="carousel-caption">
+		                    <h2>Caption 3</h2>
+		                </div>
+		            </div>
+		        </div>
 
-		<p>袁雪凌怎么这么聪明！</p>
-		<div class="container">
-		  <h3>Centered Tabs</h3>
-		  <ul class="nav nav-tabs nav-justified">
-		    <li class="active"><a href="#">Home</a></li>
-		    <li><a href="#">Menu 1</a></li>
-		    <li><a href="#">Menu 2</a></li>
-		    <li><a href="#">Menu 3</a></li>
-		  </ul>
-		  <br>
-		  <h3>Centered Pills</h3>
-		  <ul class="nav nav-pills nav-justified">
-		    <li class="active"><a href="#">Home</a></li>
-		    <li><a href="#">Menu 1</a></li>
-		    <li><a href="#">Menu 2</a></li>
-		    <li><a href="#">Menu 3</a></li>
-		  </ul>
-		</div>
+		        <!-- Controls -->
+		        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		            <span class="icon-prev"></span>
+		        </a>
+		        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+		            <span class="icon-next"></span>
+		        </a>
+			</header>
+			<section id="about" class="background-white about-section">
+		        <div class="container">
+		            <div class="row">
+		            	<div class="col-xs-4 text-center">
+		                    <img class="img-responsive center-block img-circle" src="images/selfie.jpg">
+		                    <p class="hello">Hello World</p>
+		                </div>
+		            	<div class="col-xs-4">
+		                    <p class="text-left text-capitalize">Familiar Operating System:</p>
+		                    <p class="text-left text-capitalize">Linux, Mac OS, Windows</p>
+		                    <p class="text-left text-capitalize">Familiar Database System:</p>
+		                    <p class="text-left text-capitalize">PostgresSQL, MySQL</p>
+		                    <p class="text-left text-capitalize">Languages:</p>
+		                    <p class="text-left text-capitalize">Scheme, Python, C, C++, Java, Bash, Matlab, Lua</p>
+		                    <p class="text-left text-capitalize">Familiar APIs:</p>
+		                    <p class="text-left text-capitalize">JDBC, OpenGL, OpenCL, CUDA</p>
+		                </div>
+		                <div class="col-xs-4">
+		                    <p class="text-left text-capitalize">Computer Science Interest:</p>
+		                    <p class="text-left text-capitalize">Computer Grpahic, Machine Learning, iOS development, Web Development and Security</p>
+		                    <p class="text-left text-capitalize">Math Interest:</p>
+		                    <p class="text-left text-capitalize">Statistics, Number Theory, Geometry and Graph Theory</p>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
+		    <section id="experience" class="experience-section">
+		        <div class="container">
+		        	<p class="text-left text-capitalize edu-title">Education Experience</p>
+		            <div class="row halfscreen">
+		            	<div class="col-xs-4">
+		            		<p>University of Waterloo</p>
+		            	</div>
+		            	<div class="col-xs-8">
+		            		<p>University of Waterloo Introduction</p>
+		            	</div>
+		            </div>
+		            <div class="row halfscreen">
+		            	<div class="col-xs-4">
+		            		<p>Wuhan No.2 Middle School</p>
+		            	</div>
+		            	<div class="col-xs-8">
+		            		<p>Wuhan No.2 Middle School Introduction</p>
+		            	</div>
+		            </div>
+		        </div>
+		    </section>
+		    <section id="contact" class="contact-section">
+		    	<div class="container">
+		    		<div class="row">
+		    			<p class="text-center hello">
+		    				Contact
+		    			</p>
+		    		</div>
+		    	</div>
+		    	<br>
+		    	<br>
+		    	<br>
+		    	<br>
+		        <div class="container-fluid">
+		        	<div class="row">
+		        		<div class="col-xs-3 text-center">
+		        			<i class="fa fa-linkedin fa-5x"></i>
+		        		</div>
+		        		<div class="col-xs-3 text-center">
+		        			<i class="fa fa-facebook fa-5x"></i>
+		        		</div>
+		        		<div class="col-xs-3 text-center">
+		        			<i class="fa fa-twitter fa-5x"></i>
+		   				</div>
+		    			<div class="col-xs-3 text-center">
+		    				<i class="fa fa-github fa-5x"></i>
+		        		</div>
+                    </div>
+                    <p style="padding-bottom:100px;">
+		        	</p>
+		            </div>    
+		        </div>
+		    </section>
+		<script src="js/jquery.js"></script>
+
+    	<!-- Bootstrap Core JavaScript -->
+    	<script src="js/bootstrap.min.js"></script>
 
 
-		<ul>
-  			<li>
-  				<a href="https://www.facebook.com/xueling.yuan">
-  					<img src="/allimages/facebook.png" alt="www.facebook.com" style="width:50px;height:50px;">
-  				</a>
-  			</li>
-  			<li>
-  				<a href="https://ca.linkedin.com/in/xueling-yuan-3b0a4097">
-  					<img src="/allimages/linkedin.png" alt="www.facebook.com" style="width:50px;height:50px;">
-				</a>
-			</li>
-		</ul>
+    	<script src="js/jquery.easing.min.js"></script>
+    	<script src="js/scrolling-nav.js"></script>
 
-
-
-
-
-		<link rel="stylesheet" href="/css/style.css">
-
+    	<!-- Script to Activate the Carousel -->
+    	<script>
+    	$('.carousel').carousel({
+        	interval: 5000 //changes the speed
+    	})
+    	</script>
 	</body>
 </html>
+
+				
+<!--...
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=4">
+		<title>This is my web</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<img class="img-responsive margin_bit" src="images/selfie.jpg" width=10% height=10%>
+				</div>
+				<div class="col-md-6">
+					<img class="img-responsive margin_bit" src="images/selfie.jpg" width=10% height=10%>
+				</div>
+			</div>
+    		<div class="row">
+				<div class="col-md-12">
+					<img class="img-responsive" src="images/1.JPG">
+				</div>
+			</div>	
+		</div>
+  	</body>
+</html>
+-->
