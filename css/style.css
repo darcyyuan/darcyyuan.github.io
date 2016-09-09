@@ -37,7 +37,9 @@ footer {
     font-size: 35px;
 }
 
+.myimage{
 
+}
 .name-font{
     font-size: 40px;
     font-family: 'Noto Serif', serif;
@@ -45,7 +47,8 @@ footer {
 
 .about-section {
     padding-top: 60px;
-    height: 100vh;  
+    height: auto;  
+    padding-bottom: 60px;
 }
 
 .hello {
