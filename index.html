@@ -1,101 +1,214 @@
-<html lang="en">
-		<head>
-			<meta charset="utf-8">
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<meta name="viewport" content="width=device-width, initial-scale=4">
-			<title>This is my web</title>
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/style.css">
-			<link rel="stylesheet" href="icon/css/font-awesome.min.css">
-			<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
-		</head>
-		<body id="body-top">
-			<nav class="navbar navbar-inverse navbar-fixed-top">
-			  <div class="container-fluid">
-			    <div class="navbar-header">
-			    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-			      <a class="navbar-brand" href="#body-top">Home</a>
+<html lang="en cn">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=4">
+		<title>This is my web</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/style2.css">
+		<link rel="stylesheet" href="icon/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+		
+	</head>
+	<body>
+		
+		<section id="first" class="intro">
+			<div class="name">
+				<p class="En-name">Yuan Xueling</p>
+				<p class="Cn-name">袁雪凌</p>
+			</div>
+			<div class="bottom">
+				<a class="refer-font page-scroll" href="#second" style="text-decoration: none;">About me</a><br>
+				<a class="refer-font page-scroll" href="#third" style="text-decoration: none;">Skills</a><br>
+				<a class="refer-font page-scroll" href="#fourth" style="text-decoration: none;">Projects</a><br>
+				<a class="refer-font page-scroll" href="#fifth" style="text-decoration: none;">Contact</a><br>
+			</div>
+		</section>
+		<section id="second" class="about-me">
+			<div class="container">
+				<div class="row text-center">
+					<img id="myimage" class="img-circle" src="images/selfie.png" style="max-height: 150px;">
+				</div>
+				<div class="row text-center">
+					<p class="influence">What influences me</p>
+					<hr style="height:1px;border:none;color:#333;background-color:#333;" />
+				</div>
+				<div class="row">
+			        <div class="col-md-4">
+			          <h2>Education</h2>
+			          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			          <p><a class="btn btn-info page-scroll" role="button" onclick="toggler(1);">View details &raquo;</a></p>
+			        </div>
+			        <div class="col-md-4">
+			          <h2>People</h2>
+			          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			          <p><a class="btn btn-info page-scroll" role="button" onclick="toggler(2);">View details &raquo;</a></p>
+			        </div>
+			        <div class="col-md-4">
+			          <h2>Words</h2>
+			          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			          <p><a class="btn btn-info page-scroll" role="button" onclick="toggler(3);">View details &raquo;</a></p>
+			        </div>
 			    </div>
-			    <div class="navbar-collapse collapse">
-				    <ul class="nav navbar-nav navbar-right">
-				      <li>
-				      	<a class="page-scroll" href="#about" data-toggle="collapse" data-target=".navbar-collapse">About Me</a>
-				      </li>
-				      <li>
-				      	<a class="page-scroll" href="#experience" data-toggle="collapse" data-target=".navbar-collapse">Experience</a>
-				      </li>
-				      <li>
-				      	<a class="page-scroll" href="#contact" >Contact</a>
-				      </li>
-				    </ul>
-			    </div>
-			  </div>
-			</nav>
-
-
-
-
-			<header id="myCarousel" class="carousel slide">
-		        <!-- Indicators -->
-		        <ol class="carousel-indicators">
-		            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		            <li data-target="#myCarousel" data-slide-to="1"></li>
-		            <li data-target="#myCarousel" data-slide-to="2"></li>
-		        </ol>
-
-		        <!-- Wrapper for Slides -->
-		        <div class="carousel-inner">
-		            <div class="item active">
-		                <!-- Set the first background image using inline CSS below. -->
-		                <div class="fill" style="background-image:url('images/1.JPG');"></div>
-		                <div class="carousel-caption">
-		                    <h2 class="name-font">Xueling Yuan</h2>
-		                </div>
+			</div>    
+			<div id="show1" class="container" style="display:none;">
+			    <div class="row halfscreen ">
+		           	<div class="col-sm-4 col-xs-6">
+		            	<img src="images/uwaterloo.png" class="img-rounded img-responsive" style="max-height: 150; max-width:150;">
 		            </div>
-		            <div class="item">
-		                <!-- Set the second background image using inline CSS below. -->
-		                <div class="fill" style="background-image:url('images/2.JPG');"></div>
-		                <div class="carousel-caption">
-		                    <h2 href="https://en.wikipedia.org/wiki/Kinkaku-ji">Kinkaku-ji</h2>
-		                </div>
-		            </div>
-		            <div class="item">
-		                <!-- Set the third background image using inline CSS below. -->
-		                <div class="fill" style="background-image:url('images/3.JPG');"></div>
-		                <div class="carousel-caption">
-		                    <h2>Sakura</h2>
-		                </div>
+		            <div class="col-sm-8 col-xs-6 text-left">
+		            	<p style="margin-top: 20px;" class="schoolname">University of Waterloo</p>
+		            	<p class="degreename">Bachelor of Mathematics, Computer Science</p>
+		            	<i class="fa fa-lg fa-map-marker"></i>
+                        <a href="https://www.google.ca/maps/place/University+of+Waterloo/@43.4722854,-80.5470463,17z/data=!3m1!4b1!4m5!3m4!1s0x882bf6ad02edccff:0xdd9df23996268e17!8m2!3d43.4722854!4d-80.5448576?hl=en" target="_blank">Waterloo, Ontario, Canada</a>
 		            </div>
 		        </div>
+		        <div class="row halfscreen">
+		            <div class="col-sm-4 col-xs-6">
+		            	<img src="images/er.png" class="img-rounded img-responsive"  style="max-height: 150; max-width:150;">
+		            </div>
+		            <div class="col-sm-8 col-xs-6 text-left">
+		            	<p style="margin-top: 20px;" class="schoolname">Wuhan No.2 High School</p>
+		            	<i class="fa fa-lg fa-map-marker"></i>
+                        <a href="https://www.google.ca/maps/place/Wuhan+No.2+Middle+School,+Jiangan+Qu,+Wuhan+Shi,+Hubei+Sheng,+China,+430010/@30.6063669,114.3058709,17z/data=!3m1!4b1!4m5!3m4!1s0x342eaf3518157199:0xe9a62e9f430e2ca0!8m2!3d30.606343!4d114.3083753?hl=en" target="_blank">Wuhan, Hubei, China</a>
+		            </div>
+		        </div>
+		    </div>
+		    <div id="show2" class="container" style="display:none;">
+		    	<div class="row">
+		    		<div class="col-md-6 col-xs-12">
+		    			<div class="col-md-4 col-xs-6">
+		    				<img src="images/liao.jpg" class="left-block img-responsive peopleimage">
+		    			</div>
 
-		        <!-- Controls -->
-		        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-		            <span class="icon-prev"></span>
-		        </a>
-		        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-		            <span class="icon-next"></span>
-		        </a>
-			</header>
-			<section id="about" class="background-white about-section">
-		        <div class="container">
-		            <div class="row">
-		            	<div class="col-md-4 text-center">
-		                    <img class="img-responsive center-block img-circle" src="images/selfie.jpg" style="max-height: 300px;">
-		                    <p class="name-font">Xueling Yuan</p>
-		                </div>
-		                <div class="col-md-8">
-		                	<div class="row">
-		                		<p class="hello text-center">Hello World!</p>
-		                	</div>
-			                <div class="row">
+		    			<div class="col-md-8  col-xs-6">
+		    				<p>
+		    					<a href="https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%95%96" target="_blank">李敖</a>
+		    				</p>
+		    				<p>
+		    					<a href="https://en.wikipedia.org/wiki/Li_Ao" target="_blank">Li Ao</a>
+		    				</p>
+		    				<p>Writer, Social Commentator, Historian, and Independent politician</p>
+		    			</div>
+		    		</div>
+		    		<br class="hidden-md-up">
+		    		<div class="col-md-6 col-xs-12">
+		    			<div class="col-md-4  col-xs-6">
+		    				<img src="images/zhangailing.jpg" class="left-block img-responsive peopleimage">
+		    			</div>
+		    			<div class="col-md-8 col-xs-6">
+		    				<p>
+		    					<a href="https://zh.wikipedia.org/wiki/%E5%BC%B5%E6%84%9B%E7%8E%B2" target="_blank">张爱玲</a>
+		    				</p>
+		    				<p>
+		    					<a href="https://en.wikipedia.org/wiki/Eileen_Chang" target="_blank">Eileen Chang</a>
+		    				</p>
+		    				<p>Modern Chinese writers</p>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<br>
+		    	<div class="row">
+		    		<div class="col-md-6 col-xs-12">
+		    			<div class="col-md-4 col-xs-6">
+		    				<img src="images/lebron.jpg" class="left-block img-responsive peopleimage">
+		    			</div>
+
+		    			<div class="col-md-8 col-xs-6">
+		    				<p>
+		    					<a href="https://en.wikipedia.org/wiki/LeBron_James" target="_blank">LeBron James</a>
+		    				</p>
+		    				<p>American professional basketball player</p>
+		    			</div>
+		    		</div>
+		    		<br class="hidden-md-up">
+		    		<div class="col-md-6 col-xs-12">
+		    			<div class="col-md-4 col-xs-6">
+		    				<img src="images/zhangxueyou.jpg" class="left-block img-responsive peopleimage">
+		    			</div>
+		    			<div class="col-md-8 col-xs-6">
+		    				<p>
+		    					<a href="https://zh.wikipedia.org/wiki/%E5%BC%A0%E5%AD%A6%E5%8F%8B" target="_blank">张学友</a>
+		    				</p>
+		    				<p>
+		    					<a href="https://en.wikipedia.org/wiki/Jacky_Cheung" target="_blank">Jacky Cheung</a>
+		    				</p>
+		    				<p>Singer-songwriter and Actor</p>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<br>
+		    	<div class="row">
+		    		<div class="col-md-6 col-xs-12">
+		    			<div class="col-md-4 col-xs-6">
+		    				<img src="images/yaoming.jpg" class="left-block img-responsive peopleimage">
+		    			</div>
+		    			<div class="col-md-8 col-xs-6">
+		    				<p>
+		    					<a href="https://zh.wikipedia.org/wiki/%E5%A7%9A%E6%98%8E" target="_blank">姚明</a>
+		    				</p>
+		    				<p>
+		    					<a href="https://en.wikipedia.org/wiki/Yao_Ming" target="_blank">Yao Ming</a>
+		    				</p>
+		    				<p>Chinese retired professional basketball player</p>
+		    			</div>
+		    		</div>
+		    		<br class="hidden-md-up">
+		    		<div class="col-md-6 col-xs-12">
+		    			<div class="col-md-4 col-xs-6">
+		    				
+		    			</div>
+		    			<div class="col-md-8 col-xs-6">
+		    				<p>To be continued</p>
+		    			</div>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div id="show3" class="container"  style="display:none;">
+		    	<div class="row">
+		    		<div class="col-xs-12">
+		    			<p style="font-size:20px;">Some are in Chinese while Some are in English</p>
+		    		</div>
+		    	</div>
+		    	<div class="row">
+		    		<div class="col-md-4 col-xs-12">
+		    			<p>不做无聊之事，难度有生之涯</p>
+		    			<p class="text-right">
+		    				<a href="https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%95%96" target="_blank">李敖</a>
+		    			</p>
+		    		</div>
+		    		<div class="col-md-4 col-xs-12">
+		    			<p>我爱你，没有什么目的。只是爱你。</p>
+		    			<p class="text-right">
+		    				<a href="https://zh.wikipedia.org/wiki/%E5%BC%B5%E6%84%9B%E7%8E%B2" target="_blank">张爱玲</a>
+		    			</p>
+					</div>
+		    		<div class="col-md-4 col-xs-12">
+		    			<p>I have laboured carefully, not to mock, lament, or execrate human actions, but to understand them.</p>
+		    			<p class="text-right">
+		    				<a href="https://en.wikipedia.org/wiki/Baruch_Spinoza" target="_blank">Baruch Spinoza</a>
+		    			</p>
+		    		</div>
+		    	</div>
+		    	<div class="row">
+		    		<div class="col-md-4 col-xs-12">
+		    			<p>To be Continued</p>
+		    		</div>
+		    	</div>
+		    </div>
+		</section>
+		<section id="third" class="skills">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-xs-12">
+					<h class="influence">What Skills do I Have?<h>
+					<hr style="height:1px;border:none;color:#333;background-color:#333;" />
+					</div>
+				</div>
+				<div class="row">
 			            	<div class="col-md-6">
-			            		<p class="text-center about-title">Technical Skills<p>
-			            		<p class="text-left text-capitalize">Languages:</p>
+			            		<p class="text-center skillsection">Technical Skills<p>
+			            		<p class="text-left text-capitalize skillsmallsection">Languages:</p>
 								<div class="row">
 			            			<div class="col-xs-1"><p>-</p></div>
 			            			<div class="col-xs-7 text-left">
@@ -119,12 +232,22 @@
 			            				<i style="margin-top: 4px;" class="fa fa-check-square-o fa-1x"></i>
 			            			</div>
 			            		</div>
-
 			            		<div class="row">
 			            			<div class="col-xs-1"><p>-</p></div>
 			            			<div class="col-xs-7 text-left">
 			            				<p class="text-left">
-			            					Bash / Matlab
+			            					HTML / CSS / Javascript
+			            				</p>
+			            			</div>
+			            			<div class="col-xs-4 text-center">
+			            				<i style="margin-top: 4px;" class="fa fa-check-square-o fa-1x"></i>
+			            			</div>
+			            		</div>
+			            		<div class="row">
+			            			<div class="col-xs-1"><p>-</p></div>
+			            			<div class="col-xs-7 text-left">
+			            				<p class="text-left">
+			            					Swift / Bash / Matlab
 			            				</p>
 			            				
 			            			</div>
@@ -133,7 +256,7 @@
 			            			</div>
 			            		</div>
 			            		<hr>
-			            		<p class="text-left text-capitalize">APIs:</p>
+			            		<p class="text-left text-capitalize skillsmallsection">APIs / Library:</p>
 			            		<div class="row">
 			            			<div class="col-xs-1"><p>-</p></div>
 			            			<div class="col-xs-7 text-left">
@@ -158,8 +281,20 @@
 			            				<i style="margin-top: 4px;" class="fa fa-check-square-o fa-1x"></i>
 			            			</div>
 			            		</div>
+			            		<div class="row">
+			            			<div class="col-xs-1"><p>-</p></div>
+			            			<div class="col-xs-7 text-left">
+			            				<p class="text-left">
+			            					jQuery / Bootstrap
+			            				</p>
+			            				
+			            			</div>
+			            			<div class="col-xs-4 text-center">
+			            				<i style="margin-top: 4px;" class="fa fa-check-square-o fa-1x"></i>
+			            			</div>
+			            		</div>
 			            		<hr>
-			            		<p class="text-left text-capitalize">Operating Systems:</p>
+			            		<p class="text-left text-capitalize skillsmallsection">Operating Systems:</p>
 			            		<div class="row">
 			            			<div class="col-xs-1"><p>-</p></div>
 			            			<div class="col-xs-7 text-left">
@@ -173,7 +308,7 @@
 			            			</div>
 			            		</div>
 			                    <hr>
-			                    <p class="text-left text-capitalize">Database Systems:</p>
+			                    <p class="text-left text-capitalize skillsmallsection">Database Systems:</p>
 			            		<div class="row">
 			            			<div class="col-xs-1"><p>-</p></div>
 			            			<div class="col-xs-7 text-left">
@@ -189,8 +324,8 @@
 			                </div>
 
 			                <div class="col-md-6">
-								<p class="text-center about-title">Interest<p>
-								<p class="text-left text-capitalize">Computer Science Interest:</p>
+								<p class="text-center skillsection">Interest<p>
+								<p class="text-left text-capitalize skillsmallsection">Computer Science Interest:</p>
 			            		<div class="row">
 			            			<div class="col-xs-2">
 			            				<i  style="margin-top: 3px;" class="fa fa-circle-o-notch fa-spin fa-1x fa-fw"></i>
@@ -232,7 +367,7 @@
 			            			</div>	
 			            		</div>
 			                    <hr>
-			                    <p class="text-left text-capitalize">Math Interest:</p>
+			                    <p class="text-left text-capitalize skillsmallsection">Math Interest:</p>
 			                    <div class="row">
 			            			<div class="col-xs-2">
 			            				<i  style="margin-top: 3px;" class="fa fa-circle-o-notch fa-spin fa-1x fa-fw"></i>
@@ -264,51 +399,93 @@
 			            			</div>	
 			            		</div>
 			                </div>
-			                </div>
-			            </div>
-		            </div>
-		        </div>
-		    </section>
-		    <section id="experience" class="experience-section">
-		        <div class="container">
-		        	<div class="row">
-		        		<p class="text-left text-capitalize edu-title">Education Experience</p>
-		        	</div>
-		            <div class="row halfscreen">
-		            	<div class="col-sm-4 col-xs-6">
-		            		<img src="images/uwaterloo.png" class="img-rounded img-responsive" style="max-height: 150; max-width:150;">
-		            	</div>
-		            	<div class="col-sm-8 col-xs-6 text-left">
-		            		<p style="margin-top: 20px;">University of Waterloo</p>
-		            		<p>Bachelor of Mathematics, Computer Science</p>
-		            		<i class="fa fa-lg fa-map-marker"></i>
-                            <a href="https://www.google.ca/maps/place/University+of+Waterloo/@43.4722854,-80.5470463,17z/data=!3m1!4b1!4m5!3m4!1s0x882bf6ad02edccff:0xdd9df23996268e17!8m2!3d43.4722854!4d-80.5448576?hl=en" target="_blank">Waterloo, Ontario, Canada</a>
-		            	</div>
-		            </div>
-		            <div class="row halfscreen">
-		            	<div class="col-sm-4 col-xs-6">
-		            		<img src="images/er.png" class="img-rounded img-responsive"  style="max-height: 150; max-width:150;">
-		            	</div>
-		            	<div class="col-sm-8 col-xs-6 text-left">
-		            		<p style="margin-top: 20px;">Wuhan No.2 High School</p>
-		            		<i class="fa fa-lg fa-map-marker"></i>
-                            <a href="https://www.google.ca/maps/place/Wuhan+No.2+Middle+School,+Jiangan+Qu,+Wuhan+Shi,+Hubei+Sheng,+China,+430010/@30.6063669,114.3058709,17z/data=!3m1!4b1!4m5!3m4!1s0x342eaf3518157199:0xe9a62e9f430e2ca0!8m2!3d30.606343!4d114.3083753?hl=en" target="_blank">Wuhan, Hubei, China</a>
-		            	</div>
-		            </div>
-		        </div>
-		    </section>
-		    <section id="contact" class="contact-section">
-		    	<div class="container">
-		    		<div class="row">
-		    			<p class="text-center hello">
-		    				Contact
-		    			</p>
-		    		</div>
+			        </div>
+				</div>
+			</div>
+		</section>
+		<section id="fourth" class="projects">
+			<div class="container">
+				<div class="row text-center influence">
+					<div class="col-xs-12">
+					<h>What have I done?<h>
+					</div>
+				</div>
+				<hr style="height:1px;border:none;color:#333;background-color:#333;" />
+				<div class="row">
+					<div class="col-md-4">
+						<h class="projectname">Personal Website</h><br>
+						<h class="projectdate">September 2016</h><br>
+						<h class="projectlan">HTML, CSS, Javascript</h>
+					</div>
+					<br class="hidden-sm-up">
+					<div class="col-md-8">
+						<p>- A good, not perfect, design, but it will be imprved later</p>
+						<p>- Use jQuery and Bootstrap to implement this website</p>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-md-4">
+						<h class="projectname">iOS app: Kitchen</h><br>
+						<h class="projectdate">July 2016</h><br>
+						<h class="projectlan">Xcode, Swift</h>
+					</div>
+					<br class="hidden-sm-up">
+					<div class="col-md-8">
+						<p>- Multiple Design Patterns used in the implementation including Adaptor pattern, Observer pattern and Facade Pattern </p>
+						<p>- Mutilayered Architecture is used to design the app</p>
+						<p>- A complicated app including recipe, shopping list and storage sections</p>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-md-4">
+						<h class="projectname">Simplified Starcraft</h><br>
+						<h class="projectdate">November 2015</h><br>
+						<h class="projectlan">C++, OpenGL</h>
+					</div>
+					<br class="hidden-sm-up">
+					<div class="col-md-8">
+						<p>- Multiple Algorithms used in collision detection, path finding, automatic movement</p>
+						<p>- Multiple Graphic Techniques used in Texture mapping, Model rotation and translation, and Shadow mapping</p>
+						<p>- Development of multiple models and Implementation of convenient user interface</p>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-md-4">
+						<h class="projectname">Game of Quadris</h><br>
+						<h class="projectdate">March 2014</h><br>
+						<h class="projectlan">C++, UML</h>
+					</div>
+					<br class="hidden-sm-up">
+					<div class="col-md-8">
+						<p>- Cooperated with teammate to make plan, design using UML graph and implement in C++</p>
+						<p>- Multiple Design Patterns used in the implementation including Bridge Pattern and Observe Pattern</p>
+						<p>- Well-documented source code</p>
+					</div>
+				</div>
+
+
+
+
+
+
+
+			</div>
+		</section>
+		<section id="fifth" class="contact">
+			<div class="container">
+		    	<div class="row">
+		    		<div class="col-xs-12">
+		    		<p class="text-center hello">
+		    			Contact
+		    		</p>
 		    	</div>
-		    	<br>
-		    	<br>
-		    	<br>
-		    	<br>
+		    	</div>
+		    </div>
+		    <br>
+		    <br>
 		        <div class="container-fluid">
 		        	<div class="row">
 		        		<div class="col-xs-3 text-center">
@@ -336,53 +513,60 @@
 		        	</p>
 		            </div>    
 		        </div>
-		    </section>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+		<script>
+		function toggler(n) {
+			if ( $("#show" + n).css('display') == 'none' ){
+				for (i = 1; i <= 3; i++) { 
+	    			if(i != n){
+	    				$("#show" + i).hide();
+	    			}
+				}
+    			$("#show" + n).toggle();
+    			$('#show'+ n).scrollTop($('#show' + n).scrollHeight);
+			}	else {
+				$("#show" + n).toggle();
+			}
+
+		}
+
+		
+		</script>
+
+
+
+
+		
+
+
+		<!-- <div class="container-fluid" style="background-color: #bbe4f9;"> -->
 		<script src="js/jquery.js"></script>
 
-    	<!-- Bootstrap Core JavaScript -->
+		<!-- Bootstrap Core JavaScript -->
     	<script src="js/bootstrap.min.js"></script>
-
-
     	<script src="js/jquery.easing.min.js"></script>
-    	<script src="js/scrolling-nav.js"></script>
-
-    	<!-- Script to Activate the Carousel -->
+		
+    	
+    	<script type="text/javascript" src="js/scrollUpButton.js"></script>
+    	
+		<!-- Script to Activate the Carousel -->
     	<script>
     	$('.carousel').carousel({
         	interval: 5000 //changes the speed
     	})
     	</script>
+    	<a href="#" class="scrollUpButton">&#9650</a>
 	</body>
 </html>
-
-				
-<!--...
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=4">
-		<title>This is my web</title>
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<img class="img-responsive margin_bit" src="images/selfie.jpg" width=10% height=10%>
-				</div>
-				<div class="col-md-6">
-					<img class="img-responsive margin_bit" src="images/selfie.jpg" width=10% height=10%>
-				</div>
-			</div>
-    		<div class="row">
-				<div class="col-md-12">
-					<img class="img-responsive" src="images/1.JPG">
-				</div>
-			</div>	
-		</div>
-  	</body>
-</html>
--->
